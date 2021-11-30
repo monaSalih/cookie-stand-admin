@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import {useState} from 'react'
+
+import CreateForm from '../component/createform.js'
+import { Header } from '../component/header.js';
+import { Footer } from '../component/footer.js';
+import { ReportTable } from '../component/reportTable.js';
 export default function Home() {
   const[storeData,setstoreData] = useState([]);
   
@@ -19,12 +24,7 @@ export default function Home() {
       <Head className=""> <title>cookie-stand-admin
         </title> </Head>
 
-        <header className="">
-          <h1>
-          cookie-stand-admin
-          </h1>
-
-        </header>
+        
 
         <main className="">
           <from className="" onSubmit={eventHandler}>
@@ -51,9 +51,7 @@ export default function Home() {
             </div>
           </from>
         </main>
-        <footer>
-          &copy;2021
-        </footer>
+        
        
     </div>
 
